@@ -1,0 +1,33 @@
+Assignments 7 (Sentiment analysis on Amazon Reviews)
+
+Download the data set from https://www.kaggle.com/snap/amazon-fine-food-reviews/downloads/amazon-fine-food-reviews.zip
+
+Q1. Please analyse the data, plot the required graphs to show that these conclusions are true
+a. Positive reviews are very common. => done, not true
+b. Positive reviews are shorter. => done, this is not true
+c. Longer reviews are more helpful. => done
+d. Despite being more common and shorter, positive reviews are found more helpful. => done, not true
+e. Frequent reviewers are more discerning in their ratings, write longer reviews, and write more helpful reviews. => this is not true
+
+Q2. 
+a. Split the data into two parts (Test and train data sets). => done
+b. Take only 3 features (Score, Summary, Text). => done
+c. Remove all special characters and html tags(use BeautifulSoup) from both text fields(Summary and Text). => done
+d. Convert all the capital letters into small letters. => done
+e. Remove all the stop words from both Summary and Text. (Use nltk lib) => done
+f. Using Porter stemming algorithm remove prefix and postfix in every word. (use nltk lib) => done
+
+***********************************************TBD**************************************************
+
+g. Build a dictionary of all unique words after step 'f' (size might be huge ;) ).
+h. Find P(word/score) for each word 
+ex: P(w1/S=1) = (# of score=1 reviews in which the w1 appeared) / (# of score=1 reviews)
+i. For a review of test data set find the P(S/words) using Bayes theorem.
+j. Build the confusion matrix and find out the precision, recall.
+
+Note: 
+a. Upload both pdf and ipython notebook
+b. Common probelms while using nltk lib are 
+i. https://pythonprogramming.net/stop-words-nltk-tutorial/
+ii. https://stackoverflow.com/questions/26693736/nltk-and-stopwords-fail-lookuperror
+iii. https://stackoverflow.com/questions/15219602/how-to-use-nltk-stem (myPorterStemmer.stem(word))

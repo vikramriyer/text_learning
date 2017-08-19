@@ -1,0 +1,40 @@
+Case Study: Amazon fine food reviews
+
+Objective: P(+ve|{summary, review})
+(This is a multi class clasiification problem, but the first solution will be binary classification)
+
+Tasks
+1. EDA
+all plots
+find 3 new conclusions
+
+2. Predict score
+P(+ve or -ve|{summary, review}) => there will be more features which will decide the rating/score, but for this weekend go ahead with these 2 features 
+
+3. Predict helpfulness
+P(helpful|{summary, review})
+
+
+Notes to remember:
+1. laplace smoothing
+2. discard rating 3 : done
+3. implement naive bayes
+4. Data preprocessing and cleaning : done
+5. Metrics (confusion matrix, precision, recall)
+
+Steps to approach the problem:
+- implement a naive bayes from scratch
+- before going ahead with the analysis, start as if you are writing a blog
+- read naive bayes sklearn source
+- for from the scratch at least refer to 3 sources (machine learning mastery, sklearn source,tenzo blog etc)
+
+notebook for reference
+https://www.kaggle.com/gpayen/building-a-prediction-model
+
+naive bayes from scratch
+http://machinelearningmastery.com/naive-bayes-classifier-scratch-python/
+https://chrisalbon.com/machine-learning/naive_bayes_classifier_from_scratch.html
+https://appliedmachinelearning.wordpress.com/2017/05/23/understanding-naive-bayes-classifier-from-scratch-python-code/
+https://gist.github.com/wzyuliyang/883bb84e88500e32b833
+http://dataaspirant.com/2017/02/20/gaussian-naive-bayes-classifier-implementation-python/
+http://kenzotakahashi.github.io/naive-bayes-from-scratch-in-python.html

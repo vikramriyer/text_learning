@@ -1,0 +1,24 @@
+Which review was found to be most helpful?
+List down the top 10 reviews sorted by helfulness of the review in the descending order.
+
+Which day of the week has most number of sales?
+Which week of the month has more number of sales?
+Has any month seen high sales throughout all years?
+Has any year seen high sales?
+
+Does helpfulness depend on the length/size of the review?
+
+Do the summary and text have high corelation i.e. do summary and review both have same power in terms of calculating whether a review is positive or negative?
+
+Can we somehow know which type of food has high sales? (ex. pet food, cereals, cornflakes, dairy, etc)
+
+Are the profile names wierd? (ex. bot created)
+
+
+Some pandas tricks:
+df.groupby('name')['activity'].value_counts()
+df.groupby('name')['activity'].value_counts().unstack().fillna(0)
+
+
+Ref:
+https://medium.com/towards-data-science/pandas-tips-and-tricks-33bcc8a40bb9
